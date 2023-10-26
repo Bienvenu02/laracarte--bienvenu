@@ -1,9 +1,9 @@
-@extends('layouts.default')
+@extends('layouts.default', ['title' => 'About'])
 
 @section('content')
     <div class="container">
-        <h2>What is Laracarte</h2>
-        <p>Laracarte is a clone app of <a href="https://laramap.com" target="_blank">Laramap.com</a></p>
+        <h2>What is {{ config('app.name') }}</h2>
+        <p>{{ config('app.name') }} is a clone app of <a href="https://laramap.com" target="_blank">Laramap.com</a></p>
         
         <div class="row">
             <div class="col-md-6">
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <p>feel free to help to improve the <a href="#">source code</a></p>
+        <p>feel free to help to improve the <a href="https://github.com/Bienvenu02/laracarte--bienvenu">source code</a></p>
 
         <hr>
 
@@ -23,7 +23,7 @@
 
         <hr>
 
-        <h2>Which tools and services are in Laracarte?</h2>
+        <h2>Which tools and services are in {{ config('app.name') }}?</h2>
         <p>Basically it's built on laravel & Bootstrat. But there's a bunch of services used for and other sections.</p>
 
         <ul>
