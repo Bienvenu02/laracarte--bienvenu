@@ -22,3 +22,9 @@ Route::get('/about', [
     'as' => 'about_path',
     'uses' => 'App\Http\Controllers\PagesController@about'
 ]);
+
+
+Route::get('/contact', [
+    'as' => 'contact_path',
+    'uses' => 'App\Http\Controllers\MessageController@create'
+]);
