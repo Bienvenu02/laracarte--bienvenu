@@ -28,3 +28,8 @@ Route::get('/contact', [
     'as' => 'contact_path',
     'uses' => 'App\Http\Controllers\MessageController@create'
 ]);
+
+Route::post('/contact', [
+    'as' => 'contact_path',
+    'uses' => 'App\Http\Controllers\MessageController@store'
+]);
